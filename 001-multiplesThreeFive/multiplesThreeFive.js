@@ -23,4 +23,4 @@ var multiplesThreeFive = function(n) {
 }
 
 console.log(multiplesThreeFive(10)); // 23
-console.log(multiplesThreeFive(1000)); // 23
+console.log(multiplesThreeFive(1000)); // 233168
