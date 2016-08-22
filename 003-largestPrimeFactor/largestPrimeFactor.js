@@ -9,21 +9,22 @@ What is the largest prime factor of the number 600851475143?
 const largestPrimeFactor = (number) => {
   let currentNumber = number;
   let currentFactor = 2;
-  let largestPrime = 2;
+  let largestFactor = 0;
 
-  while (currentNumber > 1) {
-    if (currentNumber % currentFactor === 0) {
+  while (currentFactor <= currentNumber) {
+    if (currentNumber % currentFactor == 0) {
       currentNumber /= currentFactor;
+      largestFactor = currentFactor;
+    } else {
+      currentFactor++;
     }
-
-    if (currentFactor > largestPrime) {
-      largestPrime = currentFactor;
-    }
-
-    currentFactor++;
   }
 
-  return largestPrime;
+  if (currentFactor > largestFactor) {
+    largestFactor = currentNumber;
+  }
+
+  return largestFactor;
 };
 
 console.log(largestPrimeFactor(21)); // 7
