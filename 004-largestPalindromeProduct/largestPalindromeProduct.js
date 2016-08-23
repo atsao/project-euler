@@ -57,4 +57,4 @@ const isNumberPalindrome = (number) => {
 }
 
 console.log(largestPalindromeProduct(2)); // 9009
-console.log(largestPalindromeProduct(3)); // 580085
+console.log(largestPalindromeProduct(3)); // 906609
