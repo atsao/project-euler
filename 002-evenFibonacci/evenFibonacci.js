@@ -14,7 +14,7 @@ const evenFibonacci = (limit) => {
   let n1 = 0;
   let n2 = 1;
 
-  while (n2 < limit) {
+  while (n2 <= limit) {
     let n3 = n1 + n2;
     fiboNumbers.push(n3);
     n1 = n2;
@@ -32,4 +32,4 @@ const evenFibonacci = (limit) => {
 
 console.log(evenFibonacci(10)); // 10
 console.log(evenFibonacci(100)); // 188
-console.log(evenFibonacci(4000000)); // 14328
+console.log(evenFibonacci(4000000)); // 4613732
